@@ -9,8 +9,7 @@
 ## 📸 Project Preview
 
 Below is a short preview video demonstrating the app:  
-*(Preview Coming Soon)*  
-![Project Preview](Preview/SMFPreview.mp4)
+![Project Preview](Preview/SMFPreview.gif)
 
 ---
 
