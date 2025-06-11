@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "ed2618cc-80e0-425b-adca-48a8c2d93a7b",
+		"name": "SMF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23171519"
+	},
+	"item": [
+		{
+			"name": "Pattern_Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "hv1FNKfy-/DART236359.jpg"
+						}
+					]
+				},
+				"url": "http://localhost:8000/predict/pattern/"
+			},
+			"response": []
+		},
+		{
+			"name": "Color_Pattern",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Register_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john@example.com\",\r\n  \"password\": \"password123\",\r\n  \"phone\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"john@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Color_Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "g23sdiD4P/253_im_1.png",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "gWYDvYH0j/914_im_2.png"
+						}
+					]
+				},
+				"url": "http://localhost:8000/predict/color/"
+			},
+			"response": []
+		},
+		{
+			"name": "Texture_Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "WX61mqMAO/im_1.png"
+						}
+					]
+				},
+				"url": "http://localhost:8000/predict/type/"
+			},
+			"response": []
+		}
+	]
+}
